@@ -1,0 +1,88 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: aliceblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.5rem;
+}
+
+/*Contact Page modifications*/
+#ContactPage{
+    text-align: center;
+}
+#message{
+    display: block;
+    width: 700px;
+    height: 315px;
+    margin: 0 auto;
+
+}
+
+#firstname{
+    display: block;
+    width: 340px;
+    height: 50px;
+    margin: 0 0 0 406px;
+}
+.firstnamelabel{
+    margin: 0 610px 0 0; }
+
+#email{
+    width: 700px;
+    margin: 0 0 0 406px;
+}
+.emaillabel{
+    margin: 20px 0 0 0;
+}
+
+#lastname{
+    display: block;
+    width: 350px;
+    height: 50px;
+    position: relative;
+    margin: 0 0 -74px 757px;
+}
+.lastnamelabel{
+    position: relative;
+    margin: -10px 10px 0 100px; }
+
+#ContactPage {
+    background-color: #b6e3f8;
+}
+
+/* end of contact page modifications */
+
+ /* Modifications for about page **/
+
+.aboutbody{
+    border: 2px solid #007bff;
+    padding: 15px;
+    padding-bottom: 50px;
+    border-radius: 1px;
+    background-color: white;
+    width: 500px;
+    margin: 0px 0 10px 100px;
+    font-family: Arial, sans-serif;
+}
+
+#portrait{
+    position: relative;
+    margin: -500px 0 0 950px;
+    border: 5px solid #0f1554;
+}
+#signature{
+    margin: -200px 0 0 -900px;
+    position: relative;
+}
+.aboutpage{
+    background-color: #b6e3f8;
+}
+#linkedinicon{
+    position: relative;
+    margin: -90px 0 0 1100px;
+    z-index: 1;
+}
