@@ -1,3 +1,4 @@
+<!--DEVELOPER Jeremy Aviles, IS117-004, Fall 2024 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,7 @@
     <link href="css/main.css" rel="stylesheet">
 
 </head>
-<body>
+<body class="HomePage">
 <div class="container-fluid">
     <div class="row">
             <nav class="navbar navbar-expand-md
@@ -20,7 +21,7 @@
                     col-12">
 
                 <!-- Brand -->
-                <a class="navbar-brand" href="/IS117-BootstrapStarterFilesV5/index.html">
+                <a class="navbar-brand" href="#">
                     <img src="images/CyberSecLogo.png" alt="website logo" width="100" height="75">
                 </a>
                 <!-- Responsive Button for the smaller menu -->
@@ -31,8 +32,10 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <!-- Links -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/IS117-BootstrapStarterFilesV5/about.html">About</a>
+
+
+                        <li class="nav-item" class="Aboutnav-item">
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
 
                         <!-- Dropdown -->
@@ -45,12 +48,12 @@
                                 <a class="dropdown-item" href="#">Education</a>
                                 <a class="dropdown-item" href="#">Experience</a>
                                 <a class="dropdown-item" href="#">Projects</a>
-                                <a class="dropdown-item" href="#">Link 4</a>
+
                             </div>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" href="blog.html">Blog</a>
                         </li>
 
                         <li class="nav-item">
@@ -58,26 +61,62 @@
                         </li>
 
                     </ul>
+                    <form class="d-flex ms-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Search</button>
+                    </form>
                 </div>
+
             </nav>
-        <div class="row">
-        <p class="col-1">Col 1</p>
-        <p class="col-1">Col 2</p>
-        <p class="col-1">Col 3</p>
-        <p class="col-1">Col 4</p>
-        <p class="col-1">Col 5</p>
-        <p class="col-1">Col 6</p>
-        <p class="col-1">Col 7</p>
-        <p class="col-1">Col 8</p>
-        <p class="col-1">Col 9</p>
-        <p class="col-1">Col 10</p>
-        <p class="col-1">Col 11</p>
-        <p class="col-1">Col 12</p>
+
+        <div class="jumbotron text-center bg-dark text-light p-5">
+            <h1 class="display-4">Hello, I'm Jeremy Aviles</h1>
+            <p class="lead">IT Student | Aspiring Cybersecurity Professional</p>
+            <p>
+                I'm a dedicated college student passionate about securing digital systems, solving complex problems, and preparing for a future in cybersecurity.
+                Explore my journey in technology, projects, and aspirations.
+            </p>
         </div>
-    <div class="col-sm-4  text-center">
-        <h2>h2 Bootstrap heading (24px)</h2>
-        <h3>h2 Bootstrap heading (18px)</h3>
-    </div>
+
+    <div class="CardsContainer">
+
+        <div class="HomeCard" style="width: 18rem;">
+            <img class="chatroom-img" src="images/Screenshot 2024-11-26 233652.png"
+                 alt="Chatroom image" style="width: 250px"
+            >
+            <div class="card1-body">
+                <h5 class="card1-title">Chatroom Project</h5>
+                <p class="card1-text">A program that uses java's GUI framework and object-oriented programming
+                to create a virtual chatroom for multiple users
+                </p>
+                <a href="#" class="btn btn-primary">Go to Projects</a>
+            </div>
+        </div>
+
+        <div class="HomeCard" style="width: 18rem;">
+            <img class="blog-img" src="images/Screenshot%202024-11-26%20235205.png"
+                 alt="Blog image" style="width: 250px; height: 250px"
+            >
+            <div class="card2-body">
+                <h5 class="card2-title" style="text-align: center">Personal Blog</h5>
+                <p class="card2-text">
+                    Short opinion pieces on current happenings in the Cyber-sec and IT world
+                </p>
+                <a href="Blog.html" class="btn btn-primary">Go to Blog</a>
+            </div>
+        </div>
+        <div class="HomeCard" style="width: 18rem;">
+            <img class="Education-img" src="images/EducationPoster.png"
+                 alt="Education image" style="width: 250px"
+            >
+            <div class="card3-body">
+                <h5 class="card3-title" style="text-align: center">Education Experience</h5>
+                <p class="card3-text">
+                Some background on my past/current/and future educational pursuits
+                </p>
+                <a href="#" class="btn btn-primary">Go to Education</a>
+            </div>
+        </div>
 </div>
  <footer class="footer page-footer font-small ">
      <div class="container">

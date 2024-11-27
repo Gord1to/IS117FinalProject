@@ -1,3 +1,5 @@
+
+/* DEVELOPER Jeremy Aviles, IS117-004, Fall 2024 */
 .footer {
     position: fixed;
     left: 0;
@@ -10,14 +12,30 @@
     font-size: 0.5rem;
 }
 
+.nav-item {
+    display: inline-block;
+    margin-right: 200px;
+
+    gap: 20px;
+    width: 100px;
+
+    border-radius: 5px;
+   text-align: center;
+    background-color: #373b3e;
+    text-color: white;
+}
+.navbar-nav .nav-link {
+    color: snow; /* Sets the text color to white */
+}
 /*Contact Page modifications*/
 #ContactPage{
     text-align: center;
+   /* use this to space out the top grey tab --> padding-top: ; */
 }
 #message{
     display: block;
     width: 700px;
-    height: 315px;
+    height: 300px;
     margin: 0 auto;
 
 }
@@ -36,7 +54,7 @@
     margin: 0 0 0 406px;
 }
 .emaillabel{
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 #lastname{
@@ -53,11 +71,18 @@
 #ContactPage {
     background-color: #b6e3f8;
 }
+.icon-container{
+    margin: -25px 0 0 407px;
+    position:absolute;
+}
 
 /* end of contact page modifications */
 
  /* Modifications for about page **/
+.Aboutheader{
+padding: 40px 150px 0 0;
 
+}
 .aboutbody{
     border: 2px solid #007bff;
     padding: 15px;
@@ -67,15 +92,16 @@
     width: 500px;
     margin: 0px 0 10px 100px;
     font-family: Arial, sans-serif;
+    position: relative;
 }
 
 #portrait{
     position: relative;
-    margin: -500px 0 0 950px;
+    margin: -550px 0 0 950px;
     border: 5px solid #0f1554;
 }
 #signature{
-    margin: -200px 0 0 -900px;
+    margin: -250px 0 0 -900px;
     position: relative;
 }
 .aboutpage{
@@ -83,6 +109,97 @@
 }
 #linkedinicon{
     position: relative;
-    margin: -90px 0 0 1100px;
+    margin: -100px 0 0 1200px;
     z-index: 1;
 }
+.contactlink{
+    position: relative;
+    margin: 100px 0 0 1070px;
+
+}
+.contactlink:hover{
+    font-style: oblique;
+}
+/* End of About Page Modifications */
+
+/* Blog modifications */
+#Blogpage{
+    background-color: #b6e3f8;
+}
+.Blogtitle{
+    padding: 40px 0 0 700px;
+    text-shadow: 2px 2px white;
+
+
+}
+.BlogContent{
+    border: 3px solid #007bff;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    width: 600px;
+    margin: -350px 100px 100px 100px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    float: right;
+
+
+}
+
+.preview-container {
+    margin: 20px auto;
+    padding-left: 40px;
+    padding-top: 50px;
+
+}
+
+.preview-container iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: 10px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 11px 11px 11px rgba(0, 0, 0, 0.5);
+}
+
+/* End of Blog Page Modifications */
+
+/*Home Page Modifications */
+
+.HomePage{
+    background-color: #b6e3f8;
+}
+
+.CardsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.HomeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 10px 7px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatroom-img{
+    border: #0f1554 3px solid;
+}
+
+.Education-img{
+    border:  #0f1554 3px solid;
+}
+
+.blog-img{
+    border:  #0f1554 3px solid;
+}
+
+/* End of Home Page Modifications */
