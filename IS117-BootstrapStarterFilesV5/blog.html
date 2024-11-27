@@ -3,20 +3,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Bootstrap Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
           crossorigin="anonymous">
-    <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
 </head>
-<body id="Blogpage">
+<body class="blogpage">
+
 <div class="container-fluid">
     <div class="row">
-        <!-- Navbar Section -->
-        <nav class="navbar navbar-expand-md justify-content-start bg-dark navbar-dark col-12">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-md
+                    justify-content-start
+                    bg-dark navbar-dark
+                    col-12">
+
             <!-- Brand -->
             <a class="navbar-brand" href="index.html">
                 <img src="images/CyberSecLogo.png" alt="website logo" width="100" height="75">
@@ -29,7 +33,9 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <!-- Links -->
-                    <li class="nav-item">
+
+
+                    <li class="nav-item" class="Aboutnav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
 
@@ -40,98 +46,90 @@
                             Portfolio
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Education</a>
-                            <a class="dropdown-item" href="#">Experience</a>
-                            <a class="dropdown-item" href="#">Projects</a>
-
+                            <a class="dropdown-item" href="Education.html">Education</a>
+                            <a class="dropdown-item" href="Experience.html">Experience</a>
+                            <a class="dropdown-item" href="Projects.html">Projects</a>
                         </div>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+
                 </ul>
                 <form class="d-flex ms-auto">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-light" type="submit">Search</button>
                 </form>
             </div>
+
         </nav>
     </div>
-
-    <div class="col-sm-4 text-center">
-        <h2 class="Blogtitle">Blog</h2>
-
+    <!-- Blog Title Section -->
+    <div class="text-center my-4">
+        <h2>Blog</h2>
     </div>
 
-    <!-- Static Website Preview Section -->
-    <div class="row">
-        <div class="preview-container">
+    <!-- Blog Content Section -->
+
+    <div class="row g-4">
+        <div class="col-md-6">
             <h3>CrowdStrike Incident</h3>
             <iframe src="https://www.npr.org/2024/07/20/nx-s1-5046343/a-cybersecurity-glitch-triggered-a-global-technology-outage"
-                    title="Website Preview" loading="lazy"></iframe>
-            <p class="mt-3"></p>
+                    title="Website Preview" class="w-100" style="height: 300px;" loading="lazy"></iframe>
+            <p class="mt-3">
+                <a href="https://www.npr.org/2024/07/20/nx-s1-5046343/a-cybersecurity-glitch-triggered-a-global-technology-outage">Cloudstrike outage</a>
+                 A few months ago, the world experienced a global tech outage that highlighted just how fragile our digital world is. The cybersecurity company CrowdStrike traced the issue back to a software update pushed to Microsoft’s Windows systems.
+                 What started as a simple update caused chaos worldwide, with thousands of flight delays, postponed surgeries, and disruptions to 911 emergency services.
+                 While cyber incidents are nothing new, the scale of this one was unprecedented. Experts like Andy Ellis, who led security at Akamai for two decades, have long warned that mistakes can be as dangerous as cyberattacks.
+                 Ellis noted that his team was more concerned about errors than external threats, emphasizing that one line of flawed code can trigger widespread issues.
+                 CrowdStrike has since rolled out a fix, and many organizations are slowly recovering. Yet the impact remains, underscoring our vulnerability to even small mistakes.
+                 This incident should be a wake-up call for better testing of updates and prioritizing the security of essential services. We need to identify and protect the most critical parts of our infrastructure, like healthcare, to prevent future disruptions.
+                 A single error can have global consequences. In this interconnected age, we must do better.
+            </p>
         </div>
-    </div>
-    <div class="BlogContent">
-            <a href="https://www.npr.org/2024/07/20/nx-s1-5046343/a-cybersecurity-glitch-triggered-a-global-technology-outage">Cloudstrike outtage</a>
-        <p>A few months ago, the world experienced a global tech outage that highlighted just how fragile our digital world is. The cybersecurity company CrowdStrike traced the issue back to a software update pushed to Microsoft’s Windows systems.
-            What started as a simple update caused chaos worldwide, with thousands of flight delays, postponed surgeries, and disruptions to 911 emergency services.
-            While cyber incidents are nothing new, the scale of this one was unprecedented. Experts like Andy Ellis, who led security at Akamai for two decades, have long warned that mistakes can be as dangerous as cyberattacks.
-            Ellis noted that his team was more concerned about errors than external threats, emphasizing that one line of flawed code can trigger widespread issues.
-            CrowdStrike has since rolled out a fix, and many organizations are slowly recovering. Yet the impact remains, underscoring our vulnerability to even small mistakes.
-            This incident should be a wake-up call for better testing of updates and prioritizing the security of essential services. We need to identify and protect the most critical parts of our infrastructure, like healthcare, to prevent future disruptions.
-            A single error can have global consequences. In this interconnected age, we must do better.
 
-        </p>
-
-        <a href=" https://www.npr.org/2023/04/26/1170522239/tech-job-openings-mass-layoffs-workers-silicon-valley-google-meta-amazon">IT Popularity</a>
-        <p>
-        Recent mass layoffs in the tech industry have raised concerns, but one fact remains clear: IT jobs are still in high demand. While companies have cut their workforces to adapt to economic shifts, the need for skilled tech professionals continues to grow as industries rely more on technology for operations and innovation.
-        Technology is now essential for business success. Companies need experts for digital transformation, cybersecurity, and efficient IT infrastructure. The boom in remote work has also increased the demand for IT professionals who can manage collaboration tools and systems.
-        Even as some firms downsize, others invest in technology to optimize operations. Sectors like healthcare, finance, and e-commerce are looking for skilled IT workers to drive growth.
-        For tech professionals, staying adaptable and upskilling in areas such as AI, cloud computing, and cybersecurity is key. IT, specifically Cybersecurity will always be in demand, the more technologically advance we become
-        </p>
-
-        <a href="https://www.npr.org/2024/11/06/nx-s1-5172879/cybersecurity-expert-discusses-the-integrity-of-the-2024-election">2024 election legitimacy</a>
-        <p>
-            As someone who follows election security closely, I found Election Day 2024 to be a powerful reminder of just how far we’ve come in protecting our democratic processes. Despite the high turnout and the added tension of hoax bomb threats targeting polling places in key swing states, the day unfolded with minimal disruptions. This was a testament to the dedication and preparation of those working tirelessly behind the scenes.
-            Chris Krebs, the former head of the Cybersecurity and Infrastructure Security Agency (CISA), summed it up best when he said, “It was just another Tuesday on the internet.” Even with threats originating from Russian email domains, no real cyberattacks were directed at the election infrastructure. That statement carried a weight of reassurance, reminding us that the systems in place are stronger than ever.
-            The bomb threats were unsettling, especially in places like Fulton County, Georgia, where a third of jurisdictions were affected. But the response was swift and efficient. Election officials leaned on well-practiced emergency protocols, showcasing their experience and adaptability. They coordinated with courts to extend voting hours, making sure every voter had their voice heard.
-            It was a clear example of how prepared local officials have become at managing unexpected challenges. Yes, the threats were an inconvenience, and yes, the disruption was real for some. But it was also a moment to appreciate the resilience of our electoral system and the unwavering commitment of those who safeguard it. As Krebs pointed out, the system held strong. And in that,
-            I found a renewed sense of trust in our democratic process, no matter the attempts to undermine it.
-
-
-        </p>
-    </div>
-
-    <div class="row">
-        <div class="preview-container">
-            <h3>IT industry future</h3>
+        <div class="col-md-6">
+            <h3>IT Popularity</h3>
             <iframe src="https://www.npr.org/2023/04/26/1170522239/tech-job-openings-mass-layoffs-workers-silicon-valley-google-meta-amazon"
-                    title="Website Preview" loading="lazy"></iframe>
-            <p class="mt-3"></p>
+                    title="Website Preview" class="w-100" style="height: 300px;" loading="lazy"></iframe>
+            <p class="mt-3">
+                <a href="https://www.npr.org/2023/04/26/1170522239/tech-job-openings-mass-layoffs-workers-silicon-valley-google-meta-amazon">IT Popularity</a>
+                Recent mass layoffs in the tech industry have raised concerns, but one fact remains clear: IT jobs are still in high demand. While companies have cut their workforces to adapt to economic shifts, the need for skilled tech professionals continues to grow as industries rely more on technology for operations and innovation.
+                Technology is now essential for business success. Companies need experts for digital transformation, cybersecurity, and efficient IT infrastructure. The boom in remote work has also increased the demand for IT professionals who can manage collaboration tools and systems.
+                Even as some firms downsize, others invest in technology to optimize operations. Sectors like healthcare, finance, and e-commerce are looking for skilled IT workers to drive growth.
+                For tech professionals, staying adaptable and upskilling in areas such as AI, cloud computing, and cybersecurity is key. IT, specifically Cybersecurity, will always be in demand, the more technologically advanced we become.
+            </p>
         </div>
-    </div>
+    </>
 
-    <div class="row">
-        <div class="preview-container">
+    <div class="container ">
+    <div class="row g-4 justify-content-center">
+        <div class="col-md-6 pl-5">
             <h3>2024 Election Integrity</h3>
             <iframe src="https://www.npr.org/2024/11/06/nx-s1-5172879/cybersecurity-expert-discusses-the-integrity-of-the-2024-election"
-                    title="Website Preview" loading="lazy"></iframe>
-            <p class="mt-3"></p>
+                    title="Website Preview" class="w-100" style="height: 300px;" loading="lazy"></iframe>
+            <p class="mt-3">
+                <a href="https://www.npr.org/2024/11/06/nx-s1-5172879/cybersecurity-expert-discusses-the-integrity-of-the-2024-election">2024 election legitimacy</a>
+                As someone who follows election security closely, I found Election Day 2024 to be a powerful reminder of just how far we’ve come in protecting our democratic processes. Despite the high turnout and the added tension of hoax bomb threats targeting polling places in key swing states, the day unfolded with minimal disruptions. This was a testament to the dedication and preparation of those working tirelessly behind the scenes.
+                Chris Krebs, the former head of the Cybersecurity and Infrastructure Security Agency (CISA), summed it up best when he said, “It was just another Tuesday on the internet.” Even with threats originating from Russian email domains, no real cyberattacks were directed at the election infrastructure. That statement carried a weight of reassurance, reminding us that the systems in place are stronger than ever.
+                The bomb threats were unsettling, especially in places like Fulton County, Georgia, where a third of jurisdictions were affected. But the response was swift and efficient. Election officials leaned on well-practiced emergency protocols, showcasing their experience and adaptability. They coordinated with courts to extend voting hours, making sure every voter had their voice heard.
+                It was a clear example of how prepared local officials have become at managing unexpected challenges. Yes, the threats were an inconvenience, and yes, the disruption was real for some. But it was also a moment to appreciate the resilience of our electoral system and the unwavering commitment of those who safeguard it.
+
+            </p>
         </div>
     </div>
+        </div>
 
     <!-- Footer Section -->
-    <footer class="footer page-footer font-small">
+    <footer class="footer page-footer font-small ">
         <div class="container">
             <div class="row">
-                <span class="text-muted">&copy; Jeremy Aviles, 2024 | Terms Of Use | Privacy Statement</span>
+                <span class="text-muted">&copy; Jeremy Aviles, 2024 |  Terms Of Use  |  Privacy Statement</span>
             </div>
         </div>
     </footer>

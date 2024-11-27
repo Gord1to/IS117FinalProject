@@ -1,168 +1,189 @@
 
 /* DEVELOPER Jeremy Aviles, IS117-004, Fall 2024 */
+
+:root {
+    --primary-color: #0f1554;
+    --background-color: #b6e3f8;
+}
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: aliceblue;
+    background-color: aliceblue!important;
     color: white;
     text-align: center;
     padding: 10px;
     font-size: 0.5rem;
+
 }
 
 .nav-item {
     display: inline-block;
     margin-right: 200px;
-
     gap: 20px;
     width: 100px;
-
     border-radius: 5px;
    text-align: center;
     background-color: #373b3e;
-    text-color: white;
 }
 .navbar-nav .nav-link {
-    color: snow; /* Sets the text color to white */
+    color: snow;
 }
 /*Contact Page modifications*/
 #ContactPage{
     text-align: center;
-   /* use this to space out the top grey tab --> padding-top: ; */
-}
-#message{
-    display: block;
-    width: 700px;
-    height: 300px;
-    margin: 0 auto;
 
 }
-
-#firstname{
-    display: block;
-    width: 340px;
-    height: 50px;
-    margin: 0 0 0 406px;
-}
-.firstnamelabel{
-    margin: 0 610px 0 0; }
-
-#email{
-    width: 700px;
-    margin: 0 0 0 406px;
-}
-.emaillabel{
-    margin: 30px 0 0 0;
-}
-
-#lastname{
-    display: block;
-    width: 350px;
-    height: 50px;
-    position: relative;
-    margin: 0 0 -74px 757px;
-}
-.lastnamelabel{
-    position: relative;
-    margin: -10px 10px 0 100px; }
-
-#ContactPage {
+.contact-page{
     background-color: #b6e3f8;
 }
-.icon-container{
-    margin: -25px 0 0 407px;
-    position:absolute;
+.contact-page .navbar {
+    margin-bottom: 30px;
 }
+
+.contact-page .form-label {
+    font-weight: bold;
+}
+
+.contact-page .form-control {
+    border-radius: 0.25rem;
+}
+
+.contact-page .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.contact-page .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.contact-page .icon-container img {
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.contact-page .icon-container img:hover {
+    transform: scale(1.1);
+}
+
+.contact-page footer {
+    background-color: aliceblue;
+    color: #ffffff; /* White text */
+}
+
+.contact-page footer .text-muted {
+    font-size: 0.9rem; /* Slightly smaller text */
+}
+
 
 /* end of contact page modifications */
 
  /* Modifications for about page **/
-.Aboutheader{
-padding: 40px 150px 0 0;
-
-}
-.aboutbody{
-    border: 2px solid #007bff;
+aboutbody {
+    background-color: #ffffff;
+    border: 3px solid #007bff;
+    border-radius: 5px;
     padding: 15px;
-    padding-bottom: 50px;
-    border-radius: 1px;
-    background-color: white;
-    width: 500px;
-    margin: 0px 0 10px 100px;
-    font-family: Arial, sans-serif;
-    position: relative;
-}
+    margin: 0 auto;
 
-#portrait{
-    position: relative;
-    margin: -550px 0 0 950px;
-    border: 5px solid #0f1554;
-}
-#signature{
-    margin: -250px 0 0 -900px;
-    position: relative;
 }
 .aboutpage{
     background-color: #b6e3f8;
 }
-#linkedinicon{
-    position: relative;
-    margin: -100px 0 0 1200px;
-    z-index: 1;
-}
-.contactlink{
-    position: relative;
-    margin: 100px 0 0 1070px;
 
+#portrait,
+#signature {
+    max-width: 100%;
+    height: auto;
 }
-.contactlink:hover{
+
+#linkedinicon {
+    width: 40px;
+    height: 40px;
+}
+
+.contactlink {
+    font-style: normal;
+    color: #007bff;
+}
+
+.contactlink:hover {
     font-style: oblique;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .aboutbody {
+        width: 90%;
+    }
+    #portrait {
+        width: 100%;
+        border: none;
+    }
+    #signature {
+        width: 100%;
+    }
 }
 /* End of About Page Modifications */
 
-/* Blog modifications */
-#Blogpage{
+/* Blog page modifications */
+.blogpage {
     background-color: #b6e3f8;
 }
-.Blogtitle{
-    padding: 40px 0 0 700px;
+
+/* Blog title modifications */
+.blog-title {
     text-shadow: 2px 2px white;
-
-
 }
-.BlogContent{
+.blogpage p,h2,h3 {
+    color: black; /* or any color you want */
+}
+
+/* Blog content modifications */
+.blog-content {
     border: 3px solid #007bff;
-    padding: 15px;
     border-radius: 10px;
     background-color: white;
-    width: 600px;
-    margin: -350px 100px 100px 100px;
+    padding: 15px;
+    margin-left: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: Arial, sans-serif;
-    position: relative;
-    float: right;
-
-
 }
 
+/* Preview container */
 .preview-container {
     margin: 20px auto;
-    padding-left: 40px;
-    padding-top: 50px;
-
+    padding-top: 20px;
 }
 
 .preview-container iframe {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     height: 300px;
     border: 10px solid #ccc;
     border-radius: 8px;
     box-shadow: 11px 11px 11px rgba(0, 0, 0, 0.5);
 }
 
-/* End of Blog Page Modifications */
+
+.container-fluid {
+    padding: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    .blog-content {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .preview-container iframe {
+        height: 250px;
+    }
+}
 
 /*Home Page Modifications */
 
